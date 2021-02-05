@@ -26,13 +26,12 @@ $posts = TCG\Voyager\Models\Post::all();
 
       <nav class="nav-menu">
         <ul>
-          <li class="active"><a href="index.html"><i class="icofont-home"></i> <span>Home</span></a></li>
+          <li class="active"><a href="#hero"><i class="icofont-home"></i> <span>Home</span></a></li>
           <li><a href="#about"><i class="icofont-user-suited"></i> <span>About</span></a></li>
           <li><a href="#resume"><i class="icofont-ui-file"></i> <span>Resume</span></a></li>
           <li><a href="#portfolio"><i class="icofont-address-book"></i> Portfolio</a></li>
-          <li><a href="#services"><i class="icofont-server"></i> Services</a></li>
           <li><a href="#contact"><i class="icofont-envelope"></i> Contact</a></li>
-
+          <li><a href="/admin"><i class="icofont-lock"></i>Login in</a></li>
         </ul>
       </nav><!-- .nav-menu -->
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
@@ -61,6 +60,8 @@ $posts = TCG\Voyager\Models\Post::all();
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Lqyt1O2fj8zoJ24rF4G7Fl6wnBrX08i9" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+
             <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
@@ -73,7 +74,7 @@ $posts = TCG\Voyager\Models\Post::all();
                 <ul>
                   <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 1 January 2003</li>
                   <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> www.u534268.gluweb.nl</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +123 456 7890</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +31 6 44290066</li>
                   <li><i class="icofont-rounded-right"></i> <strong>City:</strong> City : Utecht, Netherlands</li>
                 </ul>
               </div>
@@ -81,7 +82,7 @@ $posts = TCG\Voyager\Models\Post::all();
                 <ul>
                   <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 18</li>
                   <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> MBO</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>PhEmailone:</strong> sam.boesjes@gmail.com</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> sam.boesjes@gmail.com</li>
                   <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
                 </ul>
               </div>
@@ -179,8 +180,8 @@ $posts = TCG\Voyager\Models\Post::all();
               <h4>Sam Boesjes</h4>
               <p><em>I am mainly good at working together. I get along with almost everyone and I always have a smile on my face.</em></p>
               <ul>
-                <li>Vondellaan 178, 3521 GH Utrecht</li>
-                <li>(123) 456-7891</li>
+                <li>Notengaard 18, 3941LW Doorn</li>
+                <li>+31 6 44290066</li>
                 <li>sam.boesjes@gmail.com</li>
               </ul>
             </div>
@@ -248,26 +249,19 @@ $posts = TCG\Voyager\Models\Post::all();
           <p>Here are all my important and fun projects.</p>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="row">
-          @if (count($posts) > 0)
-              @foreach ($posts as $post)
-                      <div class="col-md-4">
-                          <figure class="card card-product">
-                              <div class="img-wrap"><img src="{{$post->image}}"></div>
-                              <div class="info-wrap">
-                                  <div class="rating-wrap">
-                                      <div class="label-rating"><p style="color: #fff">{{$post->title}}</p></div>
-                                  </div> <!-- rating-wrap.// -->
-                              </div>
-                              <div class="bottom-wrap">
-                                  <a href="{{$post->excerpt}}" class="btn btn-md" style="background-color: #18d26e; margin-left: 29%">Go to project</a><!-- price-wrap.// -->
-                              </div> <!-- bottom-wrap.// -->
-                          </figure>
-                      </div>
-                      @endforeach
-          @endif
+        <!-- <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100"> -->
+          <div class="container">
+            <br><br>
+            <div class="row">
+              @foreach($posts as $post)
+              <div class="col-md-3">
+                <a href="/post/{{ $post->slug }}">
+                  <img src="{{ Voyager::image( $post->image ) }}" style="width:100%">
+                  <span>{{ $post->title }}</span>
+                </a>
+              </div>
+              @endforeach
+            </div>
           </div>
         </div>
       </div>
@@ -291,7 +285,7 @@ $posts = TCG\Voyager\Models\Post::all();
               <div class="address">
                 <i class="icofont-google-map"></i>
                 <h4>Location:</h4>
-                <p>Vondellaan 178, 3521 GH Utrecht</p>
+                <p>Notengaard 18, 3941LW Doorn</p>
               </div>
 
               <div class="email">
@@ -303,10 +297,10 @@ $posts = TCG\Voyager\Models\Post::all();
               <div class="phone">
                 <i class="icofont-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+31 6 44290066</p>
               </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1QzYpG6gwCbmLfynSs4p6_tygGmf9uRqy" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
 
           </div>

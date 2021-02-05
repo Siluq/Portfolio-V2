@@ -14,8 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $posts = TCG\Voyager\Models\Post::all();
+    $posts = App\Post::all();    
     return view('welcome');
+});
+
+Route::get('post/{slug}', function($slug){
+	$post = App\Post::where('slug', '=', $slug)->firstOrFail();
+	return view('post', compact('post'));
 });
 
 Auth::routes();
