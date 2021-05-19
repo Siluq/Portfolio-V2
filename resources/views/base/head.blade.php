@@ -43,7 +43,7 @@ $posts = TCG\Voyager\Models\Post::all();
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Sam Boesjes</h1>
-      <p>I'm a <span class="typed" data-typed-items="Worker, Developer, Music lover, Sensualist"></span></p>
+      <p>I'm a <span class="typed" data-typed-items="Worker, Developer, Music lover, Sensualist, Sporter, Gamer"></span></p>
     </div>
   </section><!-- End Hero -->
 
@@ -60,12 +60,12 @@ $posts = TCG\Voyager\Models\Post::all();
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Lqyt1O2fj8zoJ24rF4G7Fl6wnBrX08i9" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Lqyt1O2fj8zoJ24rF4G7Fl6wnBrX08i9" frameborder="0" style="border:0; width: 100%; height: 500px;" allowfullscreen></iframe>
 
             <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Web Developer.</h3>
+            <h3>Sam Boesjes</h3>
             <p class="font-italic">
               Here is some basic information about me.
             </p>
@@ -73,38 +73,43 @@ $posts = TCG\Voyager\Models\Post::all();
               <div class="col-lg-6">
                 <ul>
                   <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 1 January 2003</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> www.u534268.gluweb.nl</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +31 6 44290066</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> City : Utecht, Netherlands</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> <a href="https://samboesjes.nl/">samboesjes.nl</a></li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> <a href="tel:+31 644290066">+31 6 44290066</a></li>
+                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Doorn, Utrecht, Netherlands</li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
                   <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 18</li>
                   <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> MBO</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> sam.boesjes@gmail.com</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> <a href="mailto:info@samboesjes.nl">info@samboesjes.nl</a></li>
                   <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
                 </ul>
               </div>
-            </div>
-            <p>
-              If you want to know more about me, feel free to send me a message I often answer them quickly.
+            </div> 
+            <hr>
+            <h3>More about me</h3>
+            <p class="font-italic">
+              Here is a little bit about me.
             </p>
           </div>
-        </div>
-
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
+    <!-- ======= My life Section ======= -->
+    <!-- <section id="life" class="skills section-bg">
       <div class="container">
 
         <div class="section-title">
-          <h2>Skills</h2>
+          <h2>My life</h2>
           <p>
             I have been learning web development for 2 years now but I still have a lot to learn before it is good enough.
           </p>
+        </div>
+        <hr> -->
+
+        <!-- <div class="section-title">
+          <h2>Social skills</h2>
         </div>
 
         <div class="row skills-content">
@@ -157,15 +162,15 @@ $posts = TCG\Voyager\Models\Post::all();
               </div>
             </div>
 
-          </div>
+          </div> 
 
-        </div>
+        </div> -->
 
       </div>
     </section><!-- End Skills Section -->
 
     <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
+    <section id="resume" class="resume section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -181,8 +186,8 @@ $posts = TCG\Voyager\Models\Post::all();
               <p><em>I am mainly good at working together. I get along with almost everyone and I always have a smile on my face.</em></p>
               <ul>
                 <li>Notengaard 18, 3941LW Doorn</li>
-                <li>+31 6 44290066</li>
-                <li>sam.boesjes@gmail.com</li>
+                <li><a href="tel:+31 644290066">+31 6 44290066</a></li>
+                <li><a href="mailto:info@samboesjes.nl">info@samboesjes.nl</a></li>
               </ul>
             </div>
 
@@ -241,7 +246,7 @@ $posts = TCG\Voyager\Models\Post::all();
     </section><!-- End Resume Section -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
+    <section id="portfolio" class="portfolio">
       <div class="container">
 
         <div class="section-title">
@@ -258,17 +263,19 @@ $posts = TCG\Voyager\Models\Post::all();
                 <a href="/post/{{ $post->slug }}">
                   <img src="{{ Voyager::image( $post->image ) }}" style="width:100%">
                   <span>{{ $post->title }}</span>
+                  <br><br>
                 </a>
               </div>
               @endforeach
             </div>
           </div>
+          <hr>
         </div>
       </div>
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -291,13 +298,13 @@ $posts = TCG\Voyager\Models\Post::all();
               <div class="email">
                 <i class="icofont-envelope"></i>
                 <h4>Email:</h4>
-                <p>sam.boesjes@gmail.com</p>
+                <p><a href="mailto:info@samboesjes.nl">info@samboesjes.nl</a></p>
               </div>
 
               <div class="phone">
                 <i class="icofont-phone"></i>
                 <h4>Call:</h4>
-                <p>+31 6 44290066</p>
+                <p><a href="tel:+31 644290066">+31 6 44290066</a></p>
               </div>
 
               <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1QzYpG6gwCbmLfynSs4p6_tygGmf9uRqy" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
