@@ -2,12 +2,12 @@
 use TCG\Voyager\Models\Post;
 $posts = TCG\Voyager\Models\Post::all();
 ?>
-<link rel="stylesheet" href="/icofont/icofont.min.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="fas fa-bars"></i></button>
 
   <!-- ======= Header ======= -->
   <header id="header">
@@ -17,24 +17,24 @@ $posts = TCG\Voyager\Models\Post::all();
         <img src="{{ asset("/img/profile-img.jpg")}}" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="/">Sam Boesjes</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="https://www.linkedin.com/in/sam-boesjes/" class="linkedin"><i class="icofont-linkedin"></i></a>
-          <a href="https://www.instagram.com/sam.boesjes/" class="instagram"><i class="icofont-instagram"></i></a>
-          <a href="https://www.facebook.com/sam.boesjes" class="facebook"><i class="icofont-facebook"></i></a>
-          <a href="https://twitter.com/SamBoesjes" class="twitter"><i class="icofont-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/sam-boesjes/" class="linkedin"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Siluq/" class="twitter"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/sam.boesjes/" class="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/sam.boesjes" class="facebook"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://twitter.com/SamBoesjes" class="facebook"><i class="fab fa-twitter-square"></i></a>
         </div>
       </div>
 
       <nav class="nav-menu">
         <ul>
-          <li class="active"><a href="#hero"><i class="icofont-home"></i> <span>Home</span></a></li>
-          <li><a href="#about"><i class="icofont-user-suited"></i> <span>About</span></a></li>
-          <li><a href="#resume"><i class="icofont-ui-file"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio"><i class="icofont-address-book"></i> Portfolio</a></li>
-          <li><a href="#contact"><i class="icofont-envelope"></i> Contact</a></li>
-          <li><a href="/admin"><i class="icofont-lock"></i>Login in</a></li>
+          <li class="active"><a href="#hero"><i class="fas fa-home"></i> <span>Home</span></a></li>
+          <li><a href="#about"><i class="fas fa-user-tie"></i> <span>About</span></a></li>
+          <li><a href="#resume"><i class="far fa-file-alt"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio"><i class="far fa-address-book"></i> Portfolio</a></li>
+          <li><a href="/admin"><i class="fas fa-unlock-alt"></i>Login in</a></li>
         </ul>
       </nav><!-- .nav-menu -->
-      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="fas fa-bars"></i></button>
 
     </div>
   </header><!-- End Header -->
@@ -72,18 +72,19 @@ $posts = TCG\Voyager\Models\Post::all();
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 1 January 2003</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> <a href="https://samboesjes.nl/">samboesjes.nl</a></li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> <a href="tel:+31 644290066">+31 6 44290066</a></li>
-                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Doorn, Utrecht, Netherlands</li>
+                  <li><i class="fas fa-angle-right"></i> <strong>Birthday:</strong> 1 January 2003</li>
+                  <li><i class="fas fa-angle-right"></i> <strong>Website:</strong> <a href="https://samboesjes.nl/">samboesjes.nl</a></li>
+                  <li><i class="fas fa-angle-right"></i> <a href="https://github.com/Siluq/"><strong>Github</strong></a></li>
+                  <li><i class="fas fa-angle-right"></i> <a href="https://www.linkedin.com/in/sam-boesjes/"><strong>LinkedIn</strong></a></li>
+                  <li><i class="fas fa-angle-right"></i> <strong>City:</strong> Utrechtse Heuvelrug, Utrecht, Nederland</li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 18</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> MBO</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> <a href="mailto:info@samboesjes.nl">info@samboesjes.nl</a></li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
+                  <li><i class="fas fa-angle-right"></i> <strong>Age:</strong> 18</li>
+                  <li><i class="fas fa-angle-right"></i> <strong>Degree:</strong> MBO</li>
+                  <li><i class="fas fa-angle-right"></i> <strong>Email:</strong> <a href="mailto:info@samboesjes.nl">info@samboesjes.nl</a></li>
+                  <li><i class="fas fa-angle-right"></i> <strong>Freelance:</strong> Available</li>
                 </ul>
               </div>
             </div> 
@@ -175,9 +176,9 @@ $posts = TCG\Voyager\Models\Post::all();
 
         <div class="section-title">
           <h2>Resume</h2>
-          <p>You can look at my resume right here, it seemed easier that everyone had everything right at once.</p>
+          <p>You can look at my resume right here, if you want to see all my jobs you can visit my linkedIn profiel.<br>
+          <a href="https://www.linkedin.com/in/sam-boesjes/"><strong>LinkedIn</strong></a></p>
         </div>
-
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
             <h3 class="resume-title">Sumary</h3>
@@ -185,8 +186,8 @@ $posts = TCG\Voyager\Models\Post::all();
               <h4>Sam Boesjes</h4>
               <p><em>I am mainly good at working together. I get along with almost everyone and I always have a smile on my face.</em></p>
               <ul>
-                <li>Notengaard 18, 3941LW Doorn</li>
-                <li><a href="tel:+31 644290066">+31 6 44290066</a></li>
+                <li>Utrechtse Heuvelrug, Utrecht, Nederland</li>
+                <li><a href="https://github.com/Siluq/"><strong>Github</strong></a></li>
                 <li><a href="mailto:info@samboesjes.nl">info@samboesjes.nl</a></li>
               </ul>
             </div>
@@ -275,7 +276,7 @@ $posts = TCG\Voyager\Models\Post::all();
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
+    <!-- <section id="contact" class="contact section-bg">
       <div class="container">
 
         <div class="section-title">
@@ -290,7 +291,7 @@ $posts = TCG\Voyager\Models\Post::all();
           <div class="col-lg-5 d-flex align-items-stretch">
             <div class="info">
               <div class="address">
-                <i class="icofont-google-map"></i>
+                <i class="fas fa-map-marker-alt"></i>
                 <h4>Location:</h4>
                 <p>Notengaard 18, 3941LW Doorn</p>
               </div>
@@ -348,7 +349,7 @@ $posts = TCG\Voyager\Models\Post::all();
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section>End Contact Section -->
 
   </main><!-- End #main -->
 
@@ -361,7 +362,7 @@ $posts = TCG\Voyager\Models\Post::all();
     </div>
   </footer><!-- End  Footer -->
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="{{ asset("/vendor/jquery/jquery.min.js")}}"></script>

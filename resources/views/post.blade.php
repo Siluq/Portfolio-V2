@@ -31,7 +31,7 @@
 				<img src="{{ Voyager::image( $post->image ) }}" style="width:100%">
 				<p>{!! $post->body !!}</p>
 				<br />
-				<p><a class="button" href="http://portfolio.dev/#portfolio">Back</a></p>
+				<p><a class="button" href="http://samboesjes.nl/#portfolio">Back</a></p>
 			</div>
 		</div>
 	</div>
