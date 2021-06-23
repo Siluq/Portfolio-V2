@@ -25,18 +25,6 @@ Route::get('post/{slug}', function($slug){
 
 Auth::routes();
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/work', function () {
-    return view('work');
-});
-
 Route::get('/contact/{name?}', 'ContactController@index');
 
 

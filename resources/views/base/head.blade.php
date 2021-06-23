@@ -7,7 +7,7 @@ $posts = TCG\Voyager\Models\Post::all();
 <body>
 
   <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="fas fa-bars"></i></button>
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="fas"></i></button>
 
   <!-- ======= Header ======= -->
   <header id="header">
@@ -17,11 +17,11 @@ $posts = TCG\Voyager\Models\Post::all();
         <img src="{{ asset("/img/profile-img.jpg")}}" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="/">Sam Boesjes</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="https://www.linkedin.com/in/sam-boesjes/" class="linkedin"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/Siluq/" class="twitter"><i class="fab fa-github"></i></a>
-          <a href="https://www.instagram.com/sam.boesjes/" class="instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/sam.boesjes" class="facebook"><i class="fab fa-facebook-square"></i></a>
-          <a href="https://twitter.com/SamBoesjes" class="facebook"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.linkedin.com/in/sam-boesjes/" class="linkedin" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Siluq/" class="twitter" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" ></i></a>
+          <a href="https://www.instagram.com/sam.boesjes/" class="instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/sam.boesjes" class="facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://twitter.com/SamBoesjes" class="facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter-square"></i></a>
         </div>
       </div>
 
@@ -73,9 +73,9 @@ $posts = TCG\Voyager\Models\Post::all();
               <div class="col-lg-6">
                 <ul>
                   <li><i class="fas fa-angle-right"></i> <strong>Birthday:</strong> 1 January 2003</li>
-                  <li><i class="fas fa-angle-right"></i> <strong>Website:</strong> <a href="https://samboesjes.nl/">samboesjes.nl</a></li>
-                  <li><i class="fas fa-angle-right"></i> <a href="https://github.com/Siluq/"><strong>Github</strong></a></li>
-                  <li><i class="fas fa-angle-right"></i> <a href="https://www.linkedin.com/in/sam-boesjes/"><strong>LinkedIn</strong></a></li>
+                  <li><i class="fas fa-angle-right"></i> <strong>Website:</strong> <a href="https://samboesjes.nl/" target="_blank" rel="noopener noreferrer">samboesjes.nl</a></li>
+                  <li><i class="fas fa-angle-right"></i> <a href="https://github.com/Siluq/" target="_blank" rel="noopener noreferrer"><strong>Github</strong></a></li>
+                  <li><i class="fas fa-angle-right"></i> <a href="https://www.linkedin.com/in/sam-boesjes/" target="_blank" rel="noopener noreferrer"><strong>LinkedIn</strong></a></li>
                   <li><i class="fas fa-angle-right"></i> <strong>City:</strong> Utrechtse Heuvelrug, Utrecht, Nederland</li>
                 </ul>
               </div>
@@ -93,6 +93,18 @@ $posts = TCG\Voyager\Models\Post::all();
             <p class="font-italic">
               Here is a little bit about me.
             </p>
+            <div class="row">
+              <div class="col-lg-12">
+                <ul>
+                  <li><i class="fas fa-angle-right"></i> <strong>Programming languages:</strong><i class="fab fa-html5"></i>HTML, <i class="fab fa-js-square"></i>JavaScript, <i class="fab fa-php"></i>
+                  PHP, <i class="fab fa-react"></i>React, <i class="fab fa-laravel"></i>Laravel, <i class="fab fa-python"></i>Python,<br><i class="fas fa-database"></i>Database MySQLi, 
+                  <i class="fab fa-bootstrap"></i>Bootstrap</li>
+                  <li><i class="fas fa-angle-right"></i> <i class="fas fa-music"></i><strong>Hobby's:</strong>Music, Gamen, Programming, Nature</li>
+                  <li><i class="fas fa-angle-right"></i> <i class="fas fa-running"></i><strong>Sport:</strong>Bootcamp, Bolder, Kickboks</li>
+                  <li><i class="fas fa-angle-right"></i> <i class="fas fa-user-tag"></i><strong>Personality:</strong>Always a smile on my face, Directly, Friendly, Patient</li>
+                </ul>
+              </div>
+            </div> 
           </div>
       </div>
     </section><!-- End About Section -->
@@ -177,7 +189,7 @@ $posts = TCG\Voyager\Models\Post::all();
         <div class="section-title">
           <h2>Resume</h2>
           <p>You can look at my resume right here, if you want to see all my jobs you can visit my linkedIn profiel.<br>
-          <a href="https://www.linkedin.com/in/sam-boesjes/"><strong>LinkedIn</strong></a></p>
+          <a href="https://www.linkedin.com/in/sam-boesjes/" target="_blank" rel="noopener noreferrer"><strong>LinkedIn</strong></a></p>
         </div>
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
@@ -187,7 +199,7 @@ $posts = TCG\Voyager\Models\Post::all();
               <p><em>I am mainly good at working together. I get along with almost everyone and I always have a smile on my face.</em></p>
               <ul>
                 <li>Utrechtse Heuvelrug, Utrecht, Nederland</li>
-                <li><a href="https://github.com/Siluq/"><strong>Github</strong></a></li>
+                <li><a href="https://github.com/Siluq/" target="_blank" rel="noopener noreferrer"><strong>Github</strong></a></li>
                 <li><a href="mailto:info@samboesjes.nl">info@samboesjes.nl</a></li>
               </ul>
             </div>
@@ -273,6 +285,7 @@ $posts = TCG\Voyager\Models\Post::all();
           <hr>
         </div>
       </div>
+      <br><br><br>
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Contact Section ======= -->
